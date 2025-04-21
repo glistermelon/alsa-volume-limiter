@@ -34,6 +34,6 @@ int main(int argc, const char* argv[]) {
     }
 
     printf("Volume limit has been set to (raw value) %s%d%s\n", ANSI_BOLD, max_vol, ANSI_CLEAR);
-    printf("Restart the alsa-volume-limiter service for this change to take effect.");
+    printf("Restart the alsa-volume-limiter service for this change to take effect.\n");
 
 }
