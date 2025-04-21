@@ -14,7 +14,7 @@ int main(int argc, const char* argv[]) {
     }
 
     if (load_mixer()) {
-        printf("%s%s[ERROR]%s Failed to load mixer\n", ANSI_RED, ANSI_BOLD, ANSI_CLEAR, CONFIG_FILE_PATH);
+        printf("%s%s[ERROR]%s Failed to load mixer\n", ANSI_RED, ANSI_BOLD, ANSI_CLEAR);
         return 1;
     }
 
