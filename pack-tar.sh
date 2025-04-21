@@ -1,0 +1,1 @@
+tar --exclude='alsa-volume-limiter/.vscode' --exclude='alsa-volume-limiter/releases' -cf alsa-volume-limiter.tar alsa-volume-limiter
