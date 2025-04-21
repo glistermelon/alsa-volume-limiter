@@ -20,4 +20,8 @@ int write_conf();
 int load_mixer();
 int free_mixer();
 
+#define ANSI_BOLD "\033[1m"
+#define ANSI_RED "\033[31m"
+#define ANSI_CLEAR "\033[0m"
+
 #endif

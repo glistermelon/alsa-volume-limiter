@@ -2,10 +2,6 @@
 
 #include <stdio.h>
 
-#define ANSI_BOLD "\033[1m"
-#define ANSI_RED "\033[31m"
-#define ANSI_CLEAR "\033[0m"
-
 int main(int argc, const char* argv[]) {
 
     if (read_conf()) {

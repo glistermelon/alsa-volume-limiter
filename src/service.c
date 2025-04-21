@@ -11,6 +11,16 @@ void clamp_volume(snd_mixer_t *mixer, snd_mixer_elem_t *elem) {
 
 int main() {
 
+    if (read_conf()) {
+        printf("%s%s[ERROR]%s Failed to read config file from %s\n", ANSI_RED, ANSI_BOLD, ANSI_CLEAR, CONFIG_FILE_PATH);
+        return 1;
+    }
+
+    if (load_mixer()) {
+        printf("%s%s[ERROR]%s Failed to load mixer\n", ANSI_RED, ANSI_BOLD, ANSI_CLEAR);
+        return 1;
+    }
+
     struct pollfd fds[1];
     int nfds = snd_mixer_poll_descriptors(mixer, fds, 1);
 
