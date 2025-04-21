@@ -53,3 +53,7 @@ Simple mixer control 'Headset',0
 #### Systemd
 
 The `alsa-volume-limiter` service must be running.
+
+#### Setting Maximum Volume
+
+Run `alsa-volume-limiter-config`
